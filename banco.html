@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+</head>
+
+<body>
+
+    <script>
+        let nomeUsuario = '';
+
+        function inicio() {
+            let opcao = parseInt(prompt(`Bem-Vindo, ${nomeUsuario}! Escolha uma opção:\n1. Saldo\n2. Extrato\n3. Saque\n4. Depósito\n5. Transferência\n6. Sair`));
+
+            switch (opcao) {
+                case 1:
+                    acessoSenha();
+                    saldo();
+                    break;
+                case 2:
+                    acessoSenha();
+                    extrato();
+                    break;
+                case 3:
+                    acessoSenha();
+                    saque();
+                    break;
+                case 4:
+                    acessoSenha();
+                    deposito();
+                    break;
+                case 5:
+                    acessoSenha();
+                    transferencia();
+                    break;
+                case 6:
+                    console.log(`\n${nomeUsuario}, foi um prazer ter você por aqui!`);
+                    break;
+                default:
+                    erro();
+                    inicio();
+
+            }
+        }
+
+        function acessoSenha() {
+            const senha = '3589';
+            let senhaUsuario = prompt('Por favor insira sua senha:');
+            if (senhaUsuario !== senha) {
+                console.log('Senha incorreta. Tente novamente.');
+                acessoSenha();
+            }
+        }
+
+        function saldo() {
+            console.log('Seu saldo é.' + saldo);
+            inicio();
+        }
+
+        function extrato() {
+            console.log('Extrato:\n- Transação1: R$ 100.00\n- Transação2: R$ 250.00\n Transação3: R$ 50.00');
+            inicio();
+        }
+
+        function saque() {
+            let valor = parseFloat(prompt('Informe o valor a ser sacado:'));
+            if (valor <= 0) {
+                console.log('Operação não autorizada.');
+                return;
+            }
+
+            console.log('Saque efetuado com sucesso!');
+            inicio();
+        }
+
+        function deposito() {
+            let valor = parseFloat(prompt('Informe o valor a ser depositado:'));
+            if (valor <= 0) {
+                console.log('Operação não autorizada.');
+                saldo +=deposito;
+                return;
+            }
+
+            console.log('Depósito efetuado com sucesso!');
+            inicio();
+        }
+
+        function transferencia() {
+            let numeroConta = parseInt(prompt('Informe o número da conta de destino:'));
+            let valor = parseFloat(prompt('Informe o valor a ser tranferido:'));
+            if (valor <= 0) {
+                console.log('Operação não autorizada.');
+                return;
+            }
+
+            console.log('Transfêrencia realizada com sucesso!');
+            inicio();
+        }
+
+        function erro() {
+            console.log('Opção inválida. Por favor, escolha uma opção válida.');
+        }
+
+        function sair() {
+            let confirma = confirm('Você deseja sair?');
+            if (confirma) {
+            window.close();
+            } else {
+                inicio();
+            }
+        }
+
+        nomeUsuario = prompt('Olá! Qual o seu nome?');
+        console.log(`Olá ${nomeUsuario}, é um prazer ter você por aqui!`);
+        inicio();
+
+    </script>
+
+</body>
+
+</html>
