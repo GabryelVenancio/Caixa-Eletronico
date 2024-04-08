@@ -8,23 +8,30 @@ Funcionalidades
 🔒 Em seguida, pede a senha (3589) para acessar as funcionalidades do banco.
 2. Opções de Funcionalidades
 📋 Após a senha ser inserida corretamente, o usuário é apresentado com um menu de opções:
-Saldo
-Extrato
-Saque
-Depósito
-Transferência
-Sair
-3. Consulta de Saldo
+
+  Saldo
+
+  Extrato
+
+  Saque
+
+  Depósito
+
+  Transferência
+
+  Sair
+
+4. Consulta de Saldo
 💰 Mostra o saldo atual da conta do usuário.
-4. Extrato
+5. Extrato
 📜 Mostra o extrato das transações recentes.
-5. Saque
+6. Saque
 💸 Permite ao usuário sacar dinheiro da conta, desde que haja saldo disponível.
-6. Depósito
+7. Depósito
 💳 Permite ao usuário depositar dinheiro na conta.
-7. Transferência
+8. Transferência
 🔄 Permite ao usuário transferir dinheiro para outra conta, desde que haja saldo disponível.
-8. Sair
+9. Sair
 🚪 Permite ao usuário sair do sistema.
 
 Observações
