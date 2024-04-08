@@ -26,6 +26,7 @@ Sair
 🔄 Permite ao usuário transferir dinheiro para outra conta, desde que haja saldo disponível.
 8. Sair
 🚪 Permite ao usuário sair do sistema.
+
 Observações
 O programa é projetado para fins de simulação e aprendizado.
 As operações são realizadas com um saldo inicial de R$ 500,00.
