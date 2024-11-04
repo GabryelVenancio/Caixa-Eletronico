@@ -6,7 +6,7 @@ Este é um código HTML com JavaScript embutido que simula as operações básic
 
 <p>
   <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Logo" width="40" height="40"/>
-  <img src="https://img.icons8.com/color/48/000000/html-5.svg" alt="HTML Logo" width="40" height="40"/>
+  <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Logo" width="40" height="40"/>
   <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Logo" width="40" height="40"/>
 </p>
 
